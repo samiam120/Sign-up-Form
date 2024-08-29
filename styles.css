@@ -1,18 +1,45 @@
-body{
-    height: 100vh;
-    margin: 0;
+body {
+  height: 100vh;
+  margin: 0;
 }
 
-.flex-container{
-    display:flex;
-    width: 100%;
-    height: 100%;
+.flex-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
-.background{
-    background-image: url("images/background.jpg");
-    width: 40%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
+.background {
+  background-image: url("images/background.jpg");
+  width: 40%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
+
+.logoContainer {
+  box-sizing: border-box;
+  width: 100%;
+  height: 125px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoContainer h2 {
+  color: white;
+  font-family: "Gochi Hand", cursive;
+  font-size: 3rem;
+}
+
+.logoContainer h2::before{
+    position: relative;
+    content: url("/images/earth.png");
+    top: 5px;
+    right: 10px;
+}
+
