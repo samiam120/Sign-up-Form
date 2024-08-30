@@ -1,8 +1,9 @@
-:root{
+:root {
   --div-padding: 30px;
 }
 body {
   height: 100vh;
+  width: 100vw;
   margin: 0;
 }
 
@@ -39,75 +40,100 @@ body {
   font-size: 3rem;
 }
 
-.logoContainer h2::before{
-    position: relative;
-    content: url("/images/earth.png");
-    top: 5px;
-    right: 10px;
+.logoContainer h2::before {
+  position: relative;
+  content: url("/images/earth.png");
+  top: 5px;
+  right: 10px;
 }
 
-.right-side{
-    box-sizing: border-box;
-    background-color: #F9FAFB;
-    box-sizing: border-box;
-    width: 100vh;
-    display: flex;
-    flex-direction: column;
+.right-side {
+  box-sizing: border-box;
+  background-color: #f9fafb;
+  box-sizing: border-box;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
 }
 .first-text-container,
-.createAccountButton{
-    box-sizing: border-box;
-    height: 35%;
+.createAccountButton {
+  box-sizing: border-box;
+  height: 35%;
 }
 
-.first-text-container p{
-    position: relative;
-    top: 100px;
-    font-size: 1.3rem;
-    font-weight: bold;
-    font-family: "Junge", cursive;
-    font-style: normal;
-    color: black;
+.first-text-container p {
+  position: relative;
+  top: 100px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Junge", cursive;
+  font-style: normal;
+  color: black;
 }
 
 .first-text-container,
 .form-container,
-.createAccountButton{
+.createAccountButton {
   box-sizing: border-box;
   padding: var(--div-padding);
 }
-.form-container{
+.form-container {
   background-color: white;
 }
 
-ul{
+form{
+}
+
+ul {
   margin: 0;
   padding: 0;
 }
 
-li{
+li {
   list-style: none;
 }
 
-label{
+label {
   display: flex;
+  font-family: "Junge", "cursive";
 }
 
-input{
+input {
   min-width: 250px;
   min-height: 25px;
   border-radius: 5px;
   border: 1px solid #999;
 }
 
-#input{
+#input {
   display: flex;
   gap: 50px;
 }
 
-#input li{
+#input li {
   margin-top: 1rem;
 }
 
+button {
+  border: none;
+  box-shadow: 1px;
+  background-color: #596d47;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 40px;
+  box-shadow: 2px 1px 10px gray;
+}
 
+a{
+  text-decoration: none;
+}
 
+span {
+  color: #596d47;
+  font-family: "Junge", "cursive";
+  font-weight: normal;
+}
+
+h3{
+  margin-top :0;
+}
