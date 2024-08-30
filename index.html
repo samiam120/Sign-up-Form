@@ -33,8 +33,68 @@
           </p>
           <p>You <em>know</em> you want to.</p>
         </div>
-        <div class="form-container"></div>
-        <div class="createAccountButton"></div>
+        <div class="form-container">
+          <form action="">
+            <h3>Lets do this!</h3>
+            <ul id="input">
+              <div class="input1">
+                <li>
+                  <label for="first_name">First Name</label>
+                  <input
+                    type="text"
+                    name="first_name"
+                    id="first_name"
+                    placeholder="John"
+                  />
+                </li>
+                <li>
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Johndoe@appleseed.com"
+                  />
+                </li>
+                <li>
+                  <label for="pwd">Password</label>
+                  <input type="password" name="pwd" id="pwd" placeholder="" />
+                </li>
+              </div>
+              <div class="input2">
+                <li>
+                  <label for="last_name">Last Name</label>
+                  <input
+                    type="text"
+                    name="last_name"
+                    id="last_name"
+                    placeholder="Doe"
+                  />
+                </li>
+                <li>
+                  <label for="tel">Phone Number</label>
+                  <input
+                    type="tel"
+                    name="tel"
+                    id="tel"
+                    placeholder="123-456-7890"
+                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                    required
+                  />
+                </li>
+                <li>
+                  <label for="confirm-pwd">Confirm Password</label>
+                  <input type="text" name="pwd-confirm" id="confirm-pwd" />
+                </li>
+              </div>
+            </ul>
+          </form>
+        </div>
+        <div class="createAccountButton">
+          <button type="submit">Create Account</button>
+          <br />
+          <p>Already have an account? <a href="">Log in</a></p>
+        </div>
       </div>
     </div>
   </body>
