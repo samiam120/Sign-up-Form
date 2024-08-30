@@ -1,3 +1,6 @@
+:root{
+  --div-padding: 30px;
+}
 body {
   height: 100vh;
   margin: 0;
@@ -51,10 +54,10 @@ body {
     display: flex;
     flex-direction: column;
 }
-.first-text-container{
+.first-text-container,
+.createAccountButton{
     box-sizing: border-box;
     height: 35%;
-    padding: 30px;
 }
 
 .first-text-container p{
@@ -66,4 +69,45 @@ body {
     font-style: normal;
     color: black;
 }
+
+.first-text-container,
+.form-container,
+.createAccountButton{
+  box-sizing: border-box;
+  padding: var(--div-padding);
+}
+.form-container{
+  background-color: white;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+label{
+  display: flex;
+}
+
+input{
+  min-width: 250px;
+  min-height: 25px;
+  border-radius: 5px;
+  border: 1px solid #999;
+}
+
+#input{
+  display: flex;
+  gap: 50px;
+}
+
+#input li{
+  margin-top: 1rem;
+}
+
+
 
