@@ -77,11 +77,12 @@ body {
   box-sizing: border-box;
   padding: var(--div-padding);
 }
+
 .form-container {
   background-color: white;
 }
-
-form{
+.createAccountButton {
+  margin-top: 30px;
 }
 
 ul {
@@ -124,7 +125,7 @@ button {
   box-shadow: 2px 1px 10px gray;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -134,6 +135,25 @@ span {
   font-weight: normal;
 }
 
-h3{
-  margin-top :0;
+h3 {
+  margin-top: 0;
 }
+
+input[placeholder]{
+  opacity: .5;
+}
+
+input[type]:valid {
+  border: 1px solid green;
+  box-shadow: 0px 0px 5px 1px green;
+}
+
+input[type="password"]:invalid {
+  box-shadow: 0px 0px 5px 1px red;
+}
+
+input[type]:focus {
+  box-shadow: 0px 0px 0px blue;
+}
+
+
